@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Registro</title>
+</head>
+
+<body>
+    <!-- formulario para la creacion de cuenta -->
+    <form class="form-register" action="recibido.html" method="post">
+        <!-- titulo del formulario -->
+        <h2>REGISTRO</h2>
+
+        <!-- entrada de nombre -->
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre" maxlength="50" required>
+
+        <!-- entrada de apellidos -->
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido" maxlength="50" required>
+
+        <!-- entrada de dni -->
+        <input class="controls" type="tel" name="dni" id="dni" placeholder="Ingrese su DNI" maxlength="8" required>
+
+        <!-- entrada de correo -->
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo" maxlength="100" required>
+
+        <!-- entrada de fecha de nacimiento -->
+        <input class="controls" type="date" name="fechaNac" id="fechaNac" min="1970-12-31" max="2005-12-31" required>
+
+        <!-- entrada de sexo -->
+        <b><p style="text-align: left; border-bottom: none;">Sexo:</p></b>
+
+        <input type="radio" name="sexo" id="masculino" value="m" checked>
+        <label for="masculino" style="display: inline;">Masculino</label>
+        
+        <input type="radio" name="sexo" id="femenino" value="f">
+        <label for="femenino" style="display: inline;">Femenino</label>
+
+        <!-- entrada de usuario -->
+        <input class="controls" style="margin-top: 25px;" type="text" name="usuario" id="usuario" placeholder="Ingrese su Usuario" maxlength="50" required>
+
+        <!-- entrada de contraseña -->
+        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña" maxlength="8" required>
+
+        <!-- entrada de telefono -->
+        <input class="controls" type="tel" name="telefono" id="telefono" placeholder="Ingrese su Teléfono" maxlength="9">
+
+        <!-- entrada de direccion -->
+        <input class="controls" type="text" name="direccion1" id="direccion1" placeholder="Ingrese su Direccion 1" maxlength="100"><br>
+        <input class="controls" type="text" name="direccion2" id="direccion2" placeholder="Ingrese su Direccion 2" maxlength="100">
+        
+        <!-- terminos y condiciones -->
+        <input type="checkbox" id="aceptar" required>
+        <p style="display: inline-block; border-bottom: none;">Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+
+        <!-- entrada submit -->
+        <input class="botons" type="submit" value="Registrar">
+        
+        <!-- enlace login -->
+        <p><a href="login.html">¿Ya tengo Cuenta?</a></p>
+    </form>
+
+</body>
+
+</html>
